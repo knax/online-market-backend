@@ -17,9 +17,9 @@ class CreateProductsTable extends Migration {
 			$table->increments('id');
 			$table->string('name');
 			$table->string('color');
-			$table->integer('catagories_id')->unsigned();
+			$table->integer('catagory_id')->unsigned();
 			$table->timestamps();
-			$table->foreign('catagories_id')->references('id')->on('catagories');
+			$table->foreign('catagory_id')->references('id')->on('catagories');
 		});
 	}
 
