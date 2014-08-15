@@ -16,6 +16,7 @@ class CreatePhotosTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
+			$table->string('filename');
 			$table->integer('product_id')->unsigned();
 			$table->timestamps();
 			$table->foreign('product_id')->references('id')->on('products');
