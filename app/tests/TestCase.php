@@ -3,6 +3,16 @@
 class TestCase extends Illuminate\Foundation\Testing\TestCase {
 
 	/**
+	 * Migrate the database before any test.
+	 */
+	public function setUp()
+	{
+		parent::setUp();
+
+		Artisan::call('migrate');
+	}
+
+	/**
 	 * Creates the application.
 	 *
 	 * @return \Symfony\Component\HttpKernel\HttpKernelInterface
