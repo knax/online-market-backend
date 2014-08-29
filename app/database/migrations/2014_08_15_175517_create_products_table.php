@@ -16,10 +16,13 @@ class CreateProductsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
+			$table->integer('price');
+			$table->text('description');
+			$table->string('stock');
 			$table->string('color');
 			$table->integer('catagory_id')->unsigned();
 			$table->timestamps();
-			$table->foreign('catagory_id')->references('id')->on('catagories');
+			$table->foreign('catagory_id')->references('id')->on('catagories')->delete('cascade')->update('cascade');
 		});
 	}
 

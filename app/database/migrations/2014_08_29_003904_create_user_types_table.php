@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateCatagoryTable extends Migration {
+class CreateUserTypesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateCatagoryTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('catagories', function(Blueprint $table)
+		Schema::create('user_types', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('name');
@@ -28,7 +28,7 @@ class CreateCatagoryTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('catagories');
+		Schema::drop('user_types');
 	}
 
 }
