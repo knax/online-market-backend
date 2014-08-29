@@ -25,7 +25,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'online_market',
 			'username'  => 'online_market',
-			'password'  => 'zvpCyZMMpXtXmTEX',
+			'password'  => 'qWNuIdbrmv2mrpqPQgux',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
