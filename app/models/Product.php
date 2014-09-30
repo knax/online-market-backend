@@ -3,9 +3,9 @@
 class Product extends \Eloquent {
 	protected $guarded = ['id'];
 
-	public function catagory()
+	public function category()
     {
-        return $this->belongsTo('Catagory', 'catagory_id', 'id');
+        return $this->belongsTo('Category', 'category_id', 'id');
     }
 
     public function photos()

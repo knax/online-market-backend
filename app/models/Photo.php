@@ -2,6 +2,7 @@
 
 class Photo extends \Eloquent {
 	protected $guarded = ['id'];
+	public $timestamps = false;
 
 	public function product()
     {
