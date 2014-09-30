@@ -15,10 +15,9 @@ class CreatePhotosTable extends Migration {
 		Schema::create('photos', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('name');
-			$table->string('filename');
+			$table->string('name', 50);
+			$table->string('filename', 255);
 			$table->integer('product_id')->unsigned();
-			$table->timestamps();
 			$table->foreign('product_id')->references('id')->on('products')->delete('cascade')->update('cascade');
 		});
 	}

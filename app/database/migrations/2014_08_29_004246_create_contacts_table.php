@@ -15,10 +15,9 @@ class CreateContactsTable extends Migration {
 		Schema::create('contacts', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('type');
-			$table->string('value');
+			$table->string('type', 20);
+			$table->string('value', 20);
 			$table->integer('user_id')->unsigned();
-			$table->timestamps();
 			$table->foreign('user_id')->references('id')->on('users')->delete('cascade')->update('cascade');
 		});
 	}
