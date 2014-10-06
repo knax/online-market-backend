@@ -4,7 +4,8 @@
 	"keywords": ["market"],
 	"license": "GPL3",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"barryvdh/laravel-cors": "0.2.x"
 	},
 	"require-dev": {
 		"way/generators": "2.*",
