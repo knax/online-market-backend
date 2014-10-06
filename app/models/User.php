@@ -3,6 +3,7 @@
 class User extends \Eloquent {
 	protected $guarded = ['id'];
 	public $timestamps = false;
+	protected $hidden = ['password', 'created_at', 'updated_at', 'remember_token'];
 
 	public function userType()
 	{
