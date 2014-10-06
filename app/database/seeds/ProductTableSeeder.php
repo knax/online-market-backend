@@ -13,7 +13,7 @@ class ProductTableSeeder extends Seeder {
 		{
 			$product = new Product();
 			$product->name = $faker->word;
-			$product->price = $faker->randomDigitNotNull(5);
+			$product->price = $faker->randomDigitNotNull(9) * 100000;
 			$product->description = $faker->paragraph(3);
 			$product->stock = $faker->numberBetween(1,20);
 			$product->color = $faker->colorName;

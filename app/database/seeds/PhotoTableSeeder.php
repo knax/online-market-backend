@@ -9,13 +9,13 @@ class PhotoTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		foreach(range(1, 5) as $index)
+		foreach(range(1, 10) as $index)
 		{
 			$photo = new Photo();
 			$photo->name = $faker->word;
 			$imageName = $faker->image(public_path() . '/assets/images', 200, 200, null, false);
-			$photo->filename = 'assets/images/'  + $imageName;
-			$photo->product()->associate( Product::find(rand(1,10)));
+			$photo->filename = 'assets/images/'  . $imageName;
+			$photo->product()->associate( Product::find($index));
 			$photo->save();
 			$this->command->info($index);
 		}
