@@ -1,0 +1,14 @@
+class_name: ApiTester
+modules:
+    enabled: [Laravel4, ApiHelper, REST, Cli, Db]
+    config:
+            REST:
+                 url: http://localhost:8000/
+            PhpBrowser:
+                 url: http://localhost:8000/api/v1/
+            Db:
+                 dsn: 'sqlite:app/tests/_data/test.sqlite'
+                 user: 'root'
+                 password: ''
+                 populate: false
+                 cleanup: false
