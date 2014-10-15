@@ -4,14 +4,12 @@
 	"keywords": ["market"],
 	"license": "GPL3",
 	"require": {
-		"laravel/framework": "4.2.*",
-		"barryvdh/laravel-cors": "0.2.x",
-		"codeception/codeception": "*"
+		"laravel/framework": "4.2.*"
 	},
 	"require-dev": {
 		"way/generators": "2.*",
 		"phpunit/phpunit": "4.2.*",
-		"fzaninotto/faker": "*"
+		"fzaninotto/faker": "v1.4.*"
 	},
 	"autoload": {
 		"classmap": [
